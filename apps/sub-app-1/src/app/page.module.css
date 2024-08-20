@@ -1,2 +1,15 @@
-.page {
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: bisque;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 0px;
+  padding: 0px;
 }

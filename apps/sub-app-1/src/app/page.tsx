@@ -1,20 +1,10 @@
-export default function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.css file.
-   */
+import style from './page.module.css';
+
+export default function Page() {
   return (
     <div>
-      <div className="wrapper">
-        <div className="container">
-          <div id="welcome">
-            <h1>
-              <span> Hello there, </span>
-              Welcome sub-app-1 👋
-            </h1>
-          </div>
-        </div>
+      <div className={style.wrapper}>
+        <h1 className={style.title}>Welcome sub-app-1 👋</h1>
       </div>
     </div>
   );
