@@ -1,0 +1,61 @@
+/* Style for the overall container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for the navigation container */
+.navContainer {
+  width: 50%;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Style for the unordered list */
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style for each list item */
+.navItem {
+  background-color: var(--random-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 100px;
+}
+
+/* Applying random colors */
+.navItem:nth-child(1) {
+  --random-color: #ff6347; /* Tomato */
+}
+
+.navItem:nth-child(2) {
+  --random-color: #4682b4; /* SteelBlue */
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Ensure the link fits within the square */
+.navItem a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
