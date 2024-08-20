@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -8,10 +7,10 @@ export default function Home() {
       <nav className={styles.navContainer}>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <Link href="/sub-app-1">Go to Sub App 1</Link>
+            <a href="/sub-app-1">Go to Sub App 1</a>
           </li>
           <li className={styles.navItem}>
-            <Link href="/sub-app-2">Go to Sub App 2</Link>
+            <a href="/sub-app-2">Go to Sub App 2</a>
           </li>
         </ul>
       </nav>
