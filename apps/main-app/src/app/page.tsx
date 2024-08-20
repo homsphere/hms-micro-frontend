@@ -1,16 +1,16 @@
 import Link from 'next/link';
-import './page.css';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h1>Main App</h1>
-      <nav className="nav-container">
-        <ul className="nav-list">
-          <li className="nav-item">
+      <nav className={styles.navContainer}>
+        <ul className={styles.navList}>
+          <li className={styles.navItem}>
             <Link href="/sub-app-1">Go to Sub App 1</Link>
           </li>
-          <li className="nav-item">
+          <li className={styles.navItem}>
             <Link href="/sub-app-2">Go to Sub App 2</Link>
           </li>
         </ul>
