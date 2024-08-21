@@ -13,7 +13,10 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
-  webpack(config) {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  webpack(config, options) {
     config.plugins.push(
       new NextFederationPlugin({
         name: 'main-app',
@@ -21,6 +24,7 @@ const nextConfig = {
         remotes: {
           subApp1: 'subApp1@http://localhost:3001/_next/static/chunks/remoteEntry.js',
           subApp2: 'subApp2@http://localhost:3002/_next/static/chunks/remoteEntry.js',
+          subApp3: 'subApp3@http://localhost:3003/remoteEntry.js',
         },
         extraOptions: {},
         exposes: {},

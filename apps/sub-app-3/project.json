@@ -1,0 +1,21 @@
+{
+  "name": "sub-app-3",
+  "sourceRoot": "apps/sub-app-3/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "options": {
+        "webpackConfig": "./webpack.config.js"
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:webpack",
+      "options": {
+        "webpackConfig": "./webpack.config.js",
+        "port": 3003,
+        "watch": true
+      }
+    }
+  }
+}

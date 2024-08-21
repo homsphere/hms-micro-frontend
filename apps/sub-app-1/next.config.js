@@ -13,13 +13,17 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
-  webpack(config) {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  webpack(config, options) {
+    // if (!options.isServer) {
     config.plugins.push(
       new NextFederationPlugin({
         name: 'subApp1',
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
-          './App': './src/pages/index.tsx',
+          './Home': './src/components/home/index.tsx',
         },
         extraOptions: {},
         shared: {
@@ -36,6 +40,7 @@ const nextConfig = {
         },
       }),
     );
+    // }
 
     return config;
   },

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@/*": ["./src/*"],
       "@my-microfrontend-monorepo/*": ["./*"]
     }
   },

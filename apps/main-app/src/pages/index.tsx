@@ -1,19 +1,14 @@
+import React from 'react';
 import styles from './page.module.css';
+
+//@ts-ignore
+// const HomeOne = React.lazy(() => import('subApp1/Home'), { ssr: false });
+const HomeThree = React.lazy(() => import('subApp3/Home'), { ssr: false });
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Main App</h1>
-      <nav className={styles.navContainer}>
-        <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <a href="/sub-app-1">Go to Sub App 1</a>
-          </li>
-          <li className={styles.navItem}>
-            <a href="/sub-app-2">Go to Sub App 2</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <React.Suspense fallback="Loading Remote HomeOne ...">
+      <HomeThree />
+    </React.Suspense>
   );
 }
