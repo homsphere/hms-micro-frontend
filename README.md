@@ -41,6 +41,7 @@ sub-app-2: http://localhost:3002
 
 ## Sources :
 
+- https://medium.com/the-hamato-yogi-chronichels/lets-build-micro-frontends-with-nextjs-and-module-federation-b48c2c916680
 - https://github.com/vercel/examples/tree/main/solutions/microfrontends
 - https://nx.dev/concepts/module-federation/faster-builds-with-module-federation
 - https://nx.dev/recipes/angular/module-federation-with-ssr
