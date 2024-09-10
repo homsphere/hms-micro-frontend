@@ -26,8 +26,8 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-    "../../apps/multi-zones-nextjs/.next/types/**/*.ts",
-    "../../dist/apps/multi-zones-nextjs/.next/types/**/*.ts",
+    "../../apps/app2/.next/types/**/*.ts",
+    "../../dist/apps/app2/.next/types/**/*.ts",
     "next-env.d.ts",
     ".next/types/**/*.ts"
   ],

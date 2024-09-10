@@ -7,17 +7,14 @@ export default function Index() {
         <div className="container">
           <div id="welcome">
             <h1>
-              <span> Homsphere </span>
-              Dashboard
+              <span>Homsphere </span>
+              Supervisor
             </h1>
           </div>
           <div>
             <ul>
               <li>
-                <a href="/app1">Supervisor</a>
-              </li>
-              <li>
-                <a href="/app2">Admin</a>
+                <a href="/app1/about">About</a>
               </li>
             </ul>
           </div>

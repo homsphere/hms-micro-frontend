@@ -8,18 +8,8 @@ export default function Index() {
           <div id="welcome">
             <h1>
               <span> Homsphere </span>
-              Dashboard
+              Supervisor about
             </h1>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="/app1">Supervisor</a>
-              </li>
-              <li>
-                <a href="/app2">Admin</a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
