@@ -21,6 +21,9 @@ export default function Index() {
               </li>
             </ul>
           </div>
+          <a className="button__login" href="/api/auth/logout">
+            Log out
+          </a>
         </div>
       </div>
     </div>
