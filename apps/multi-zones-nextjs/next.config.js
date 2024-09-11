@@ -16,20 +16,20 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/app1',
-        destination: `${APP1_URL}/app1`,
+        source: '/supervisor',
+        destination: `${APP1_URL}/supervisor`,
       },
       {
-        source: '/app1/:path*',
-        destination: `${APP1_URL}/app1/:path*`,
+        source: '/supervisor/:path*',
+        destination: `${APP1_URL}/supervisor/:path*`,
       },
       {
-        source: '/app2',
-        destination: `${APP2_URL}/app2`,
+        source: '/admin',
+        destination: `${APP2_URL}/admin`,
       },
       {
-        source: '/app2/:path*',
-        destination: `${APP2_URL}/app2/:path*`,
+        source: '/admin/:path*',
+        destination: `${APP2_URL}/admin/:path*`,
       },
     ];
   },

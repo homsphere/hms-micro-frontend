@@ -14,10 +14,10 @@ export default function Index() {
           <div>
             <ul>
               <li>
-                <a href="/app1">Supervisor</a>
+                <a href="/supervisor">Supervisor</a>
               </li>
               <li>
-                <a href="/app2">Admin</a>
+                <a href="/admin">Admin</a>
               </li>
             </ul>
           </div>

@@ -10,12 +10,12 @@ export function NavBar() {
           </a>
         </li>
         <li>
-          <a href="/app1" style={{ textDecoration: 'none' }}>
+          <a href="/supervisor" style={{ textDecoration: 'none' }}>
             Supervisor
           </a>
         </li>
         <li>
-          <a href="/app2" style={{ textDecoration: 'none' }}>
+          <a href="/admin" style={{ textDecoration: 'none' }}>
             Admin
           </a>
         </li>

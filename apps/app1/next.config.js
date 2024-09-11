@@ -12,7 +12,7 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
-  basePath: '/app1',
+  basePath: '/supervisor',
 };
 
 const plugins = [

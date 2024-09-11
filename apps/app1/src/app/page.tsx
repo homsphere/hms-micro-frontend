@@ -16,7 +16,7 @@ export default function Index() {
           <div>
             <ul>
               <li>
-                <a href="/app1/about">About</a>
+                <a href="/supervisor/about">About</a>
               </li>
             </ul>
           </div>
