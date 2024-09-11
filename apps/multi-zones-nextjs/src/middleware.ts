@@ -1,9 +1,3 @@
-// middleware.js
-// import { withMiddlewareAuthRequired } from '@auth0/nextjs-auth0/edge';
-
-// export default withMiddlewareAuthRequired();
-
-/**/
 import { withMiddlewareAuthRequired, getSession, getAccessToken } from '@auth0/nextjs-auth0/edge';
 import { NextResponse, NextRequest } from 'next/server';
 
