@@ -5,7 +5,7 @@ export function NavBar() {
     <nav>
       <ul style={{ listStyle: 'none', margin: 10, padding: 0, display: 'flex', gap: '10px' }}>
         <li>
-          <a href="/" style={{ textDecoration: 'none' }}>
+          <a href="/dashboard" style={{ textDecoration: 'none' }}>
             Dashboard
           </a>
         </li>
