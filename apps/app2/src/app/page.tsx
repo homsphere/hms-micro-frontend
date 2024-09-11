@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+// import { Navbar } from '@org/shared-ui';
 
 export default function Index() {
   return (
@@ -11,13 +12,6 @@ export default function Index() {
               Admin
             </h1>
           </div>
-          {/* <div>
-            <ul>
-              <li>
-                <a href="/app1/about">About</a>
-              </li>
-            </ul>
-          </div> */}
         </div>
       </div>
     </div>
