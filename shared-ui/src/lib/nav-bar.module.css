@@ -5,3 +5,11 @@
  * .container {
  * }
 */
+
+ul {
+  display: 'flex';
+  list-style: none;
+  margin: 10;
+  padding: 0;
+  gap: '10px';
+}

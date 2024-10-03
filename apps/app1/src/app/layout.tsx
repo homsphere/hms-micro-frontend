@@ -1,3 +1,4 @@
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 import './global.css';
 import { Navbar } from '@org/shared-ui';
 
@@ -10,8 +11,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
+        <UserProvider>
+          <Navbar />
+          {children}
+        </UserProvider>
       </body>
     </html>
   );

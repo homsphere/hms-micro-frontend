@@ -1,27 +1,10 @@
-import styles from './page.module.css';
-// import { Navbar } from '@org/shared-ui';
+'use server';
 
-export default function Index() {
-  return (
-    <div className={styles.page}>
-      <div className="wrapper">
-        <div className="container">
-          <div id="welcome">
-            <h1>
-              <span>Homsphere </span>
-              Supervisor
-            </h1>
-          </div>
-          {/* <Navbar /> */}
-          <div>
-            <ul>
-              <li>
-                <a href="/supervisor/about">About</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+import Home from '../modules/home';
+import { getCurrentUserInformations } from './actions';
+
+export default async function Index() {
+  const { userId } = await getCurrentUserInformations();
+  console.log('userId', userId);
+  return <Home />;
 }
