@@ -1,6 +1,7 @@
+// import styles from './nav-bar.module.css';
 // import styles from './shared-ui.module.css';
 
-export function NavBar() {
+function NavBar() {
   return (
     <nav>
       <ul style={{ listStyle: 'none', margin: 10, padding: 0, display: 'flex', gap: '10px' }}>
@@ -25,3 +26,7 @@ export function NavBar() {
 }
 
 export default NavBar;
+
+// <ul style={{ listStyle: 'none', margin: 10, padding: 0, display: 'flex', gap: '10px' }}>
+
+//  <ul className={styles['ul']}>
